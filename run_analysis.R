@@ -54,7 +54,6 @@ selectedData <- select(combined_data, 1, 2, matches("mean[_]|mean$|std[_]|std$",
 ## Task 3 - Use descriptive activity names to name the activities in the data set.
 ## Replace factor numbers in ActivityType column with their names
 
-
 tidySelected <-selectedData %>% mutate(ActivityType = revalue(ActivityType, c("1" = "Walking",
 "2" = "Walking_Upstairs", "3" = "Walking_Downstairs", "4" = "Sitting", "5" = "Standing", "6" = "Laying"))) 
 
@@ -63,12 +62,12 @@ tidySelected <-selectedData %>% mutate(ActivityType = revalue(ActivityType, c("1
 ## 66 of these columns are the means (33) and standard deviations (33) of the relevant measurements for this
 ## assignment. 
 
-
 byActivity <- tidySelected %>% group_by(ActivityType, Subject) %>% summarize_each(funs(mean)) #%>%
        # arrange(Subject)
 
 ## Output the tidy data to file
 write.table(byActivity, file = "myTidyData.txt", row.name = FALSE)
+
 ## Output the variable names for sake of codebook
 write.table(names(byActivity), file = "variableNamesforCodebook.txt", quote = FALSE, col.names = "Variable")
 
