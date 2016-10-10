@@ -1,9 +1,9 @@
 #Codebook for the variables used in the "myTidyData.txt" table
 
 These variable names have been processed from the original ucihar_data/features.txt file. I have removed all dashes and
-parentheses from the variable names. Originally, there were 561 variables listed in the features.txt file. I have extracted only those variables that were means with accompanying standar deviations. If a variable was a mean but had no accompanying standard deviation, it was not included. 
+parentheses from the variable names. Originally, there were 561 variables listed in the features.txt file. I have extracted only those variables that were means with accompanying standard deviations. If a variable was a mean but had no accompanying standard deviation, it was not included. 
 
-The tidy data set ("myTidyData.txt"), includes a total of 180 observations and 68 variables. There are 6 activity types where measurements were taken, and 30 individual subjects. 
+The tidy data set ("myTidyData.txt"), includes a total of 180 observations and 68 variables. There are 6 activity types where measurements were taken, and 30 individual subjects. The data set has been condensed from the original in the sense that multiple (I assume, replicate) measurements of acceleration signals for the same subject and same activity type, e.g. Subject 1, Activity Type: Walking were averaged. The tidy data set is arranged by the variable, "ActivityType", but according to user preference could also be arranged by Subject. There are 30 total subjects and 6 Activity Types.
 
 __The variables are as follows:__
 
