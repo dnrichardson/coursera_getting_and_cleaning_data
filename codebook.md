@@ -1,16 +1,17 @@
-#Codebook.md
+#Codebook for the variables used in the "myTidyData.txt" table
 
 These variable names have been processed from the original ucihar_data/features.txt file. I have removed all dashes and
 parentheses from the variable names. Originally, there were 561 variables listed in the features.txt file. I have extracted only those variables that were means with accompanying standar deviations. If a variable was a mean but had no accompanying standard deviation, it was not included. 
 
 The tidy data set ("myTidyData.txt"), includes a total of 180 observations and 68 variables. There are 6 activity types where measurements were taken, and 30 individual subjects. 
 
-The variables are as follows:
+__The variables are as follows:__
 
-1. ActivityType - Factor variable of 6 types: "Walking", "Walking_Upstairs", "Walking_Downstairs", "Sitting", "Standing" and "Laying"
-2. Subject - Factor variable of the 30 subject IDs
+1. ActivityType - Factor variable of 6 types: "Walking", "Walking_Upstairs", "Walking_Downstairs", "Sitting", "Standing" and "Laying". Measurements were recorded during each of these activity types.
 
-The remaining variables (3-68 below) can be described from the original features_info.txt file, bearing in mind that I have substituted all dashes (-) with underscores:
+2. Subject - Factor variable of the 30 subject IDs. 30 total individuals participated in the study, each identified by a unique number ranging from 1 to 30.
+
+The remaining variables (3-68 below) can be described from the original features_info.txt file, bearing in mind that I have substituted all dashes (-) with underscores AND that these variable names refer to the means of the mean values and means of the standard deviations arising from the original data:
 
 __From the features_info.txt file:__
 
@@ -22,6 +23,8 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions."
+
+*Once again, the below variables are means of means and means of standard deviations arising from the non-aggregated original data*
 
 3. tBodyAcc_mean_X
 4. tBodyAcc_mean_Y
