@@ -7,6 +7,8 @@ and generate a "tidy"" summary dataset of various means and standard deviations 
 
 The objective this project was to use a variety of data wranging approaches involving reading in several text files and combining files logically to generate a final, tidy dataset. I mainly relied on Hadley Wickham's packages, dplyr and plyr to yield my final output file. The final output file is in a long format, grouped by Activity type and Subject. 
 
+To obtain the tidy data set, all one has to do is clone the repository and run the script, run_analysis.R at the command line or in RStudio. Be sure that you have the dplyr and plyr packages installed. 
+
 __Inside this directory you will find the following:__
 
 1. run_analysis.R - The script used to process the data files and generate a tidy data set, each step is described in the comments
