@@ -53,7 +53,7 @@ selectedData <- select(combined_data, 1, 2, matches("mean[_]|mean$|std[_]|std$",
 
 ## Task 3 - Use descriptive activity names to name the activities in the data set.
 ## Replace factor numbers in ActivityType column with their names
-## Spread out "ActivityType" into separate variables (or is this even necessary?)
+
 
 tidySelected <-selectedData %>% mutate(ActivityType = revalue(ActivityType, c("1" = "Walking",
 "2" = "Walking_Upstairs", "3" = "Walking_Downstairs", "4" = "Sitting", "5" = "Standing", "6" = "Laying"))) 
