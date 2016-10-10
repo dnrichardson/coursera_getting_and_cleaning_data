@@ -10,9 +10,9 @@ The variables are as follows:
 1. ActivityType - Factor variable of 6 types: "Walking", "Walking_Upstairs", "Walking_Downstairs", "Sitting", "Standing" and "Laying"
 2. Subject - Factor variable of the 30 subject IDs
 
-The remaining variables (3-68 below) can be described from the original features_info.txt file:
+The remaining variables (3-68 below) can be described from the original features_info.txt file, bearing in mind that I have substituted all dashes (-) with underscores:
 
-From the features_info.txt file:
+__From the features_info.txt file:__
 
 "The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
